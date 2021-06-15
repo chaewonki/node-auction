@@ -54,7 +54,7 @@ const upload = multer({
       const ext = path.extname(file.originalname);
       cb(
         null,
-        path.basename(file.originalname.ext) + new Date().valueOf() + ext
+        path.basename(file.originalname, ext) + new Date().valueOf() + ext
       );
     },
   }),
