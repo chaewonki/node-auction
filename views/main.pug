@@ -13,7 +13,7 @@ block content
             for good in goods
                 tr
                     td= good.name 
-                    td: img(src='/img' + good.img)
+                    td: img(src='/img/' + good.img)
                     td= good.price
                     td.time(data-start=good.createdAt) 00:00:00
                     td: a.enter.btn(href='/good/' + good.id) 입장
